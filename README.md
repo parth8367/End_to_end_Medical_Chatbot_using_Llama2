@@ -1,6 +1,15 @@
 # End-to-end-Medical-Chatbot-using-Llama2
 
-# How to run?
+This project demonstrates how to build a conversational chatbot using the [Llama_2](https://ai.meta.com/resources/models-and-libraries/llama-downloads/) model.  A PDF containing medical information is indexed with Pinecone and queried via a Flask web interface.
+
+## Features
+
+- **Document ingestion** – Medical_book.pdf is split into text chunks and embedded with `sentence-transformers`.
+- **Pinecone vector store** – The embeddings are stored and searched using Pinecone.
+- **Llama 2 inference** – Responses are generated locally with a quantized Llama 2 model via `ctransformers`.
+- **Web chat UI** – A simple Bootstrap interface allows interactive Q&A with the bot.
+
+## How to run?
 ### STEPS:
 
 Clone the repository
@@ -70,5 +79,3 @@ open up localhost:
 - Pinecone
 
 
-# End-to-end-Medical-Chatbot-using-Llama2
-# End_to_end_Medical_Chatbot_using_Llama2
